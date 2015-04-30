@@ -27,6 +27,9 @@ html {
 }
 body {
     background: #ffffff;
+    height: 768px;
+    width: 100%;
+    margin: 0px;
 }
 
 #header-nav {
@@ -47,6 +50,7 @@ body {
     margin-top: 15px;
     margin-left: 100px;
     display: inline-block;
+    cursor: pointer;
 }
 
 .dropdown-arrow {
@@ -54,20 +58,20 @@ body {
     height: 0;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-top: 5px solid #f00;
+    border-top: 5px solid #4b4f54;
     float: right;
     margin: 30px 20px 0px 0px;
+    cursor: pointer;
 }
 
 .avatar {
     width: 30px;
     height: 30px;
-    float: right;
     background: url("http://lorempixel.com/30/30");
     margin-right: 5px;
-    border: 1px solid red;
     margin-top: 13px;
     border-radius: 2px;
+    display: inline-block;
 }
 
 .new-message {
@@ -76,6 +80,7 @@ body {
     background: url("../images/new-message.png") no-repeat;
     float: right;
     margin-top: 15px;
+    cursor: pointer;
 }
 
 .search-box {
@@ -164,6 +169,7 @@ body {
 .action {
     display: inline-block;
     margin-right: 40px;
+    cursor: pointer;
 }
 
 .action-icon-label {
@@ -185,16 +191,6 @@ body {
     width: 25px;
     height: 13px;
     opacity: 0.5;
-}
-
-.modal-cover {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background-color: white;
-    z-index: 100;
 }
 
 .message-panel {
@@ -230,19 +226,91 @@ body {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     position: absolute;
-    width: 400px;
-    height: 300px;
-    background-color: white;
+    width: 580px;
+    height: 200px;
+    background-color: #dee1e5;
     left: 50%;
     top: 50%;
     margin-left: -200px;
     margin-top: -150px;
+    padding: 40px;
+    border-radius: 3px;
 }
 
-.message-panel .btns-holder {
-    text-align: center;
-    width: 100%;
+.message-panel .frame .new-message-input {
     position: absolute;
-    left: 0;
-    bottom: 0;
+    width: 520px;
+    left: 30px;
+    height: 100px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 3px;
+    resize: none;
+}
+
+.new-message-actions {
+    position: absolute;
+    bottom: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.pull-right {
+    float: right;
+}
+
+.post {
+    min-height: 155px;
+    width: 570px;
+    border: 1px solid #bec3cc;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.post > .avatar {
+    vertical-align: top;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+/* Home page styles */
+.home-post-container {
+    width: 570px;
+    margin: 30px auto;
+}
+
+.post-action-container {
+    color: #bec3cc;
+}
+
+.post-content {
+    display: inline-block;
+    width: 85%;
+    margin-top: 15px;
+}
+
+.post-image > img {
+    width: 100%;
+    height: 220px;
+}
+
+.post-content > .username {
+    display: inline-block;
+}
+
+.post-action {
+    display:inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.post-reply {
+    background: url("../images/reply-icon.png") no-repeat;
+}
+
+.post-like {
+    background: url("../images/like-icon.png") no-repeat;
 }
