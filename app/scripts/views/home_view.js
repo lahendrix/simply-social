@@ -66,7 +66,7 @@ define([
                         timestamp: "0m",
                         postImage: ""
                     });
-                    this.posts.add(model);
+                    this.posts.add(model, {at: 0});
                 }
             }
         }
