@@ -6,13 +6,6 @@
     src: url('../fonts/ProximaNova-Regularlt.otf?#iefix') format('embedded-opentype'),
 }
 
-@font-face {
-    font-family: 'proxima-black';
-    font-weight: normal;
-    font-style: normal;
-    src: url('../fonts/ProximaNova-Black.otf');
-    src: url('../fonts/ProximaNova-Black.otf') format('embedded-opentype');
-}
 
 @font-face {
     font-family: 'proxima';
@@ -81,6 +74,13 @@ body {
     float: right;
     margin-top: 15px;
     cursor: pointer;
+}
+
+.new-message-label {
+    position: absolute;
+    top: 15px;
+    font-size: 18px;
+    color: #70767f;
 }
 
 .search-box {
@@ -246,6 +246,8 @@ body {
     background-color: white;
     border-radius: 3px;
     resize: none;
+    top: 50px;
+    border: none;
 }
 
 .new-message-actions {
@@ -253,6 +255,10 @@ body {
     bottom: 10px;
 }
 
+.new-message-actions .action-icon-label {
+    color: #70767f;
+    opacity: 0.5;
+}
 .hidden {
     display: none;
 }

@@ -14,20 +14,23 @@
     </div>
 </div>
 <div class="home-post-container">
+    <% _.each(posts, function(post) { %>
     <div class="post">
         <div class="avatar"></div>
         <div class="post-content">
-            <span class="username">Some Name</span>
+            <span class="username"><%=post.username%></span>
             <div class="post-action-container pull-right">
                 <div class="post-action post-reply"></div>
                 <div class="post-action post-like"></div>
-                <span>3 min</span>
+                <span><%=post.timestamp%></span>
             </div>
-            <p>How to get inspired: the Right Way - Designmodo bit.ly/11EFG Good stuff from @designmodo</p>
+            <p><%=post.postMessage%></p>
         </div>
+        <% if (post.postImage.length > 0) { %>
         <div class="post-image">
             <img src="http://lorempixel.com/400/200"/>
         </div>
+        <% } %>
     </div>
-    <div class="post"></div>
+    <% }); %>
 </div>
