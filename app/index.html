@@ -17,8 +17,18 @@
     <body>
        <nav id="header-nav">
            <div class="logo"></div>
-           <div class="dropdown-arrow"></div>
-           <div class="avatar pull-right"></div>
+           <!--<div class="dropdown-arrow"></div>-->
+           <div class="dropdown pull-right">
+               <div class="avatar"></div>
+               <div class="dropdown-arrow"></div>
+               <ul class="dropdown-menu">
+                   <li><a href="#home">Profile</a></li>
+                   <li><a href="#followers">Followers</a></li>
+                   <li><a href="#following">Following</a></li>
+                   <li><a href="#settings">Settings</a></li>
+               </ul>
+           </div>
+           <!--<div class="avatar pull-right"></div>-->
            <div class="search-box">
                <img class="search-icon" src="images/magnifying-glass.png" width="21" height="18" alt="search icon">
                <input name="search" type="text" />
@@ -47,16 +57,6 @@
        <div id="container">
 
            <div id="main">
-               <h1>'Allo, 'Allo!</h1>
-               <p>You now have</p>
-               <ul>
-                   <li>HTML5 Boilerplate</li>
-                   <li>jQuery</li>
-                   <li>Backbone.js</li>
-                   <li>Underscore.js</li>
-                   <li>Modernizr</li>
-                   <li>RequireJS</li>
-               </ul>
            </div>
        </div>
 

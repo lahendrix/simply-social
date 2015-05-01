@@ -320,3 +320,52 @@ body {
 .post-like {
     background: url("../images/like-icon.png") no-repeat;
 }
+
+/* Dropdown menu styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown .avatar {
+    cursor: pointer;
+}
+
+.dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    display: none;
+    margin: 0;
+    width: 120px;
+    list-style: none;
+    padding: 0;
+    right: 40px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/** Button Styles **/
+.dropdown button {
+    background: #FF6223;
+    color: #FFFFFF;
+    border: none;
+    margin: 0;
+    padding: 0.4em 0.8em;
+    font-size: 1em;
+}
+
+/** List Item Styles **/
+.dropdown a {
+    display: block;
+    padding: 0.2em 0.8em;
+    text-decoration: none;
+    background: #CCCCCC;
+    color: #333333;
+}
+
+/** List Item Hover Styles **/
+.dropdown a:hover {
+    background: #BBBBBB;
+}

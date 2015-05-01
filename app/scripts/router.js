@@ -13,6 +13,8 @@ define([
 
         initialize: function() {
             this.topNavView = new TopNavView();
+            this.homeView = new HomeView();
+            this.settingsView = new SettingsView();
         },
 
         routes: {
@@ -22,16 +24,14 @@ define([
 
         showHomeView: function () {
 
-            var homeView = new HomeView();
-            homeView.render();
-            $('#main').html(homeView.$el);
+            this.homeView.render();
+            $('#main').html(this.homeView.$el);
 
         },
 
         showSettingsView: function() {
-            var settingsView = new SettingsView();
-            settingsView.render();
-            $('#main').html(settingsView.$el);
+            this.settingsView.render();
+            $('#main').html(this.settingsView.$el);
         }
 
     });
