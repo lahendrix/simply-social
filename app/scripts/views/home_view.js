@@ -20,7 +20,7 @@ define([
             var post1 = new Backbone.Model({
                 username: "Bob McDonald",
                 postMessage: "Hello I love what you're doing with this design",
-                timestamp: "3m",
+                timestamp: "3m", //TODO: timestamp is number used to keep list sorted by most recent post
                     postImage: ""
                 }),
                 post2 = new Backbone.Model({
@@ -61,7 +61,7 @@ define([
 
                 if (!e.shiftKey) {
                     var model = new Backbone.Model({
-                        username: "Bob McDonald",
+                        username: "Larry A. Hendrix",
                         postMessage: val.substring(0, val.length - 1),
                         timestamp: "0m",
                         postImage: ""
