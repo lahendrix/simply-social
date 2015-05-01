@@ -17,6 +17,8 @@ define([
         },
 
         initialize: function () {
+
+            // Just fake data to bootstrap the app
             var post1 = new Backbone.Model({
                 username: "Bob McDonald",
                 postMessage: "Hello I love what you're doing with this design",
@@ -24,10 +26,10 @@ define([
                     postImage: ""
                 }),
                 post2 = new Backbone.Model({
-                    username: "Bob McDonald",
-                    postMessage: "Hello I love what you're doing with this design",
+                    username: "Lizzy Watson",
+                    postMessage: "It needs more color. I attached my suggestions.",
                     timestamp: "3m",
-                    postImage: ""
+                    postImage: "fakeattachment.png"
                 }),
                 post3 = new Backbone.Model({
                     username: "Larry Love",
@@ -62,7 +64,7 @@ define([
                 if (!e.shiftKey) {
                     var model = new Backbone.Model({
                         username: "Larry A. Hendrix",
-                        postMessage: val.substring(0, val.length - 1),
+                        postMessage: val,
                         timestamp: "0m",
                         postImage: ""
                     });
